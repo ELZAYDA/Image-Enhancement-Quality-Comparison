@@ -71,7 +71,7 @@ The output will be saved in the `results/` folder:
 ### Example of Input and Output:
 
 #### Input (Low-Quality Image):
-![Low-Quality](data/high/102.png)
+![Low-Quality](data/low/102.png)
 
 #### Output (Enhanced Image):
 ![Enhanced](src/results/equalized/102_equalized.png)
