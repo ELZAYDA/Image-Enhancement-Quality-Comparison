@@ -20,11 +20,11 @@ To set up the project, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/image-enhancement-project.git
+     git clone https://github.com/ELZAYDA/Image-Enhancement-Quality-Comparison.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd image-enhancement-project
+   cd Image-Enhancement-Quality-Comparison
    ```
 3. Install the necessary dependencies using pip:
    ```bash
@@ -35,12 +35,14 @@ To set up the project, follow these steps:
 The project follows this directory structure:
 ```
 image-enhancement-project/
-│
-├── data/                  # Contains input low and high images (subdirectories: low, high)
-├── results/               # Results directory for saving enhanced images, plots, and metrics
-│   ├── enhanced/          # Enhanced images
-│   ├── plots/             # Plots for comparisons and histograms
-│   ├── metrics/           # Logs of SSIM scores and metrics
+│ 
+├── data/                      # Contains input low and high images (subdirectories: low, high)
+├── src/             
+|   ├── results/               # Results directory for saving enhanced images, plots, and metrics
+│       ├── enhanced/          # Enhanced images
+│       ├── plots/             # Plots for comparisons and histograms
+│       ├── metrics/           # Logs of SSIM scores and metrics
+├── notebook.ipynb
 ├── requirements.txt       # List of dependencies
 ├── script.py              # Main script for image processing
 └── README.md              # Project overview and documentation
