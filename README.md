@@ -107,13 +107,13 @@ The output will be saved in the `src/results/` directory:
 ### Example of Input and Output
 
 #### Input (Low-Quality Image):
-<img src="/api/placeholder/400/300" alt="Low-Quality Image Example"/>
+![Low-Quality](data/low/102.png)
 
 #### Output (Enhanced Image):
-<img src="/api/placeholder/400/300" alt="Enhanced Image Example"/>
+![Enhanced](src/results/equalized/102_equalized.png)
 
 #### Ground Truth (High-Quality Image):
-<img src="/api/placeholder/400/300" alt="Ground Truth Image Example"/>
+![Ground Truth](data/high/102.png)
 
 ### SSIM Score:
 
@@ -141,62 +141,41 @@ timestamp,image_name,ssim
 | 0.70 - 0.79 | Moderate enhancement |
 | < 0.70 | Poor enhancement |
 
-## Enhancement Techniques
 
-### CLAHE
 
-Contrast Limited Adaptive Histogram Equalization works by:
-- Dividing the image into small tiles
-- Applying histogram equalization to each tile
-- Limiting contrast amplification to reduce noise
-- Interpolating across tile boundaries to eliminate artifacts
+## 🤝 Contributing
 
-### Gamma Correction
-
-Adjusts the luminance of the image following the power-law expression:
-- Output = Input^γ
-- γ < 1: Brightens darker regions
-- γ > 1: Darkens brighter regions
-
-### Denoising
-
-Removes unwanted noise while preserving important image details using:
-- Non-local means denoising
-- Adaptive filtering techniques
-- Edge-preserving algorithms
-
-## Contributing
-
-If you'd like to contribute to the project, feel free to:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
-2. Create a new branch (`git checkout -b feature/amazing-enhancement`)
-3. Commit your changes (`git commit -m 'Add amazing enhancement'`)
-4. Push to the branch (`git push origin feature/amazing-enhancement`)
-5. Open a Pull Request
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add some amazing feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/amazing-feature
+   ```
 
-Any suggestions for improving the image enhancement methods or performance metrics are welcome!
 
-## Requirements
+ Open a Pull Request
 
-Before running the script, ensure you have installed all necessary dependencies:
+## 📞 Contact
 
-```bash
-pip install -r requirements.txt
-```
+**Ahmed Nabil** - Engineer & Project Maintainer
 
-The requirements.txt file includes:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/ahmed-nabil-452762293/) 
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/ELZAYDA)
 
-```
-numpy>=1.20.0
-opencv-python>=4.5.0
-scikit-image>=0.18.0
-matplotlib>=3.4.0
-pandas>=1.3.0
-```
+- 📧 Email: ahmedelzayda19@gmail.com
+- 🔗 Project: [github.com/ELZAYDA/image-enhancement-histogram](https://github.com/ELZAYDA/image-enhancement-histogram)
 
 ---
 
 <p align="center">
-  Created by <a href="https://github.com/ELZAYDA">Ahmed Nabil</a>
+  Made with ❤️ by Ahmed Nabil
 </p>
